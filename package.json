@@ -1,0 +1,60 @@
+{
+  "name": "trello-plugin-example",
+  "version": "0.0.3",
+  "description": "Basic example of a Trello plugin for MCUX 2.6",
+  "main": "./dist/trello-plugin-example/bundle.js",
+  "scripts": {
+    "test": "./node_modules/.bin/gulp test",
+    "lint": "eslint src/**/*.js",
+    "build": "./node_modules/.bin/webpack",
+    "version-up": "gitlab-ci-publish.sh"
+  },
+  "keywords": [
+    "avid"
+  ],
+  "license": "UNLICENSED",
+  "dependencies": {
+    "avid-mcux-active-asset": "file:./modules/avid-mcux-active-asset",
+    "avid-mcux-common-object": "file:./modules/avid-mcux-common-object",
+    "avid-mcux-view": "file:./modules/avid-mcux-view",
+    "avid-mcux": "file:./modules/avid-mcux",
+    "platform-ui-theme": "file:./modules/platform-ui-theme",
+    "events": "1.1.1",
+    "react": "15.3.2",
+    "react-dom": "15.3.2",
+    "trello-browser": "0.0.6"
+  },
+  "devDependencies": {
+    "avid-mcux-mocha-docker-wrapper": "file:./modules/avid-mcux-mocha-docker-wrapper",
+    "loader-html": "file:./modules/loader-html",
+    "autoprefixer": "6.5.1",
+    "babel-core": "6.18.0",
+    "babel-eslint": "7.1.0",
+    "babel-loader": "6.2.7",
+    "babel-preset-es2015": "6.18.0",
+    "babel-preset-react": "6.16.0",
+    "css-loader": "0.25.0",
+    "eslint": "3.8.1",
+    "eslint-plugin-react": "6.4.1",    
+    "fs-sync": "^1.0.3",
+    "gulp": "^3.9.1",
+    "gulp-webdriver": "2.0.2",
+    "gulp-webpack": "^1.5.0",
+    "html-loader": "0.4.4",
+    "mocha": "^3.1.2",
+    "node-sass": "^3.10.1",
+    "postcss-loader": "1.0.0",
+    "run-sequence": "^1.1.5",
+    "sass-loader": "4.0.2",
+    "selenium-standalone": "^5.1.0",
+    "style-loader": "0.13.1",
+    "tree-kill": "^1.0.0",
+    "wdio-mocha-framework": "^0.4.3",
+    "webdriverio": "4.2.16",
+    "webpack": "1.13.3"
+  },
+  "avid": {
+    "format": "amd",
+    "autoload": true
+  }
+}
