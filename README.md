@@ -31,20 +31,21 @@ The links in the Trello cards are stored as deep links. This makes it possible t
 
 ![Links in Trello](img/trello.png)
 
-# Prerequisites
-Download the UI Toolkit and put the node modules into a subdirectory called "modules". Your directory structure should look like this:
+# Running the example
 
-    - trello-plugin-example
-        - docs
-        - modules
-            - avid-mcux
-            - avid-mcux-actions-binder
+## Dependencies
+To be able to build and run this example you need to download the UI Toolkit libraries from [the developer website](https://my.avid.com/products/cppsdk?toolkit=MCT). Once you've downloaded the toolkit and unzipped it, copy everything below `avid-modules` into the `modules` directory of this project. The result should look like this:
+
+    clip-info
+        modules
+            avid-mcux
+            avid-mcux-actions-binder
             ...
-        - src
-        - test
+        ui
+        test
         ...
 
-# How to run using the avid-mcux proxy
+## How to run using the avid-mcux proxy
 
 Run in the project root:
 
@@ -56,7 +57,7 @@ Start proxy:
 
 Media Central with trello-plugin should be available at 'https://localhost:8090'.
 
-# Building
+## Building
 * Build: `webpack`
 * copy `package.json` and `dist` to the server
 
@@ -71,7 +72,7 @@ This should give you the following on the server
         ...
         
 
-# Deploying to a MediaCentral | UX server
+## Deploying to a MediaCentral | UX server
 
 To deploy this example project to a production MediaCentral | UX server, build it by running
 `npm install && npm run build`, and then copy the `trello-plugin-example` folder from `dist` to the following path
