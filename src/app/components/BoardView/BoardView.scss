@@ -1,0 +1,28 @@
+/* Board View */
+.trello-plugin-board-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: flex-start;
+  line-height: 18px;
+  margin-bottom: 16px;
+  background: #292a31;
+}
+
+.trello-plugin-board-list-item {
+  background-color: #33353d;
+  border: 1px solid #1f2127;
+  font-weight: bold;
+  cursor: pointer;
+  width: 24%;
+  line-height: 18px;
+  box-sizing: border-box;
+  position: relative;
+  text-align: left;
+  height: 96px;
+  margin: 8px 8px 8px 6px;
+  min-width: 270px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}

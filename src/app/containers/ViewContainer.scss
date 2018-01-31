@@ -1,0 +1,30 @@
+.trello-plugin-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 5px;
+  color: #c7c7c7;
+  font-size: 14px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  overflow-y: auto;
+}
+
+.trello-plugin-toolbar {
+  flex: initial;
+  padding-bottom: 2px;
+  background: #33353d;
+  margin: 0 0 10px 0;
+}
+
+.trello-plugin-page {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.trello-signin-page {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;
+  align-items: center;
+}

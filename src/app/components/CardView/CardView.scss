@@ -1,0 +1,50 @@
+/* Card View */
+
+.trello-plugin-card-container {
+  background-color: #33353E;
+  width: 100%;
+}
+
+.trello-plugin-text-label {
+  margin: 5px;
+  margin-left: 6px;
+}
+
+.trello-plugin-card-open-actions{}
+
+.trello-plugin-text-label-bold {
+  margin: 5px;
+  padding: 5px 0;
+  font-weight: bold;
+  border: 1px solid #1f2127;
+  border-width: 0 0 1px;
+}
+
+.trello-plugin-textarea {
+  margin: 5px;
+  width: 260px;
+  height: 140px;
+  color: black;
+}
+
+.trello-plugin-card-view-attachments-container{
+  background-color: #414450;
+}
+
+.trello-plugin-attachments-count {
+  font-size: 12px;
+  color: cadetblue;
+}
+
+.trello-plugin-card-view-attachments-item {
+  margin: 5px;
+  padding: 0 0 5px 0;
+
+  &>a {
+    color: #c7c7c7;
+  }
+}
+
+.trello-plugin-attachments-link:active {
+  color: #E8B119;
+}

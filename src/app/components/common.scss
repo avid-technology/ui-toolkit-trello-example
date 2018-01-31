@@ -1,0 +1,50 @@
+.trello-plugin-button {
+  margin: 5px;
+  background-color: #2693f0;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 4px 10px;
+  border: none;
+}
+
+.trello-plugin-hidden {
+  display: none;
+}
+
+.trello-plugin-board {
+  position: relative;
+  white-space: nowrap;
+}
+
+.trello-welcome-logo {
+  -webkit-mask: url(../../images/Trello-logo-grey.svg);
+  mask: url(../../images/Trello-logo-grey.svg);
+  height: 300px;
+  width: 750px;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  background-color: #c7c7c7;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+.trello-plugin-board-abs {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding-bottom: 10px;
+}
+
+.trello-plugin-any-item {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 4px;
+  border-bottom: 1px solid coral;
+}
+
+.trello-plugin-zero-items {
+  font-style: italic;
+  padding: 5px;
+}
