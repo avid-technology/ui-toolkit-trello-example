@@ -10,7 +10,7 @@ const ViewConfig = {
         menuName: appConfig.name,
         singleton: false,
         useLegacyStyles: false,
-        icon: `/plugins/${appConfig.name}/images/icon.svg`,
+        icon: `/plugins/${appConfig.identity.appName}/images/icon.svg`,
 
     },
     factory: () => {
