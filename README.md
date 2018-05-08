@@ -26,8 +26,8 @@ In the board view all cards are shown with title and the number of attachments. 
 Run in the project root:
 
     npm install
-    npm run build
     npm start
 
 ## WARNING
-To run these examples you will need a running MediaCentral Cloud UX server running. Connection settings can be changed in [src/package.json](src/package.json)
+To run these examples you will need a running MediaCentral Cloud UX server running. 
+Connection settings can be changed in [src/project.act](src/project.act)
