@@ -18,7 +18,7 @@ const SignIn = createReactClass({
 
         return (
             <ViewContainer signIn={true} page={page}>
-                <button className={commonStyles['trello-plugin-button']} onClick={TrelloActions.signIn}>Sign In</button>
+                <button className="cux-btn" onClick={TrelloActions.signIn}>Sign In</button>
             </ViewContainer>
         );
     },

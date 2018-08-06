@@ -11,7 +11,7 @@ class ViewContainer extends React.Component {
     render() {
         return (
             <div className={styles['trello-plugin-container']}>
-                <div className={styles['trello-plugin-toolbar']}>
+                <div className="cux-toolbar">
                     {this.props.children}
                 </div>
                 <div className={this.props.signIn ? styles['trello-signin-page'] : styles['trello-plugin-page']}>
