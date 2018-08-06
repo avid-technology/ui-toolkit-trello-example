@@ -44,10 +44,10 @@ const Card = createReactClass({
                     <textarea className={styles['trello-plugin-textarea']} value={this.state.cardName} onChange={this.handleChange} />
                 </div>
                 <div className={styles['trello-plugin-card-open-actions']}>
-                    <button className={commonStyles['trello-plugin-button']} onClick={this.handleEditClick} >
+                    <button className="cux-btn" onClick={this.handleEditClick} >
                         OK
                     </button>
-                    <button className={commonStyles['trello-plugin-button']} onClick={this.handleDeleteClick} >
+                    <button className="cux-btn" onClick={this.handleDeleteClick} >
                         Delete
                     </button>
                 </div>
@@ -61,7 +61,7 @@ const Card = createReactClass({
 
         return (
             <ViewContainer page={page}>
-                <button className={commonStyles['trello-plugin-button']} onClick={TrelloActions.showCurrentBoard}>Back</button>
+                <button className="cux-btn" onClick={TrelloActions.showCurrentBoard}>Back</button>
             </ViewContainer>
         );
     },

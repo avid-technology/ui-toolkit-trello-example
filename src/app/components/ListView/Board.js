@@ -40,8 +40,8 @@ const Board = createReactClass({
 
         return (
             <ViewContainer page={page}>
-                <button className={commonStyles['trello-plugin-button']} onClick={TrelloActions.showBoardsList}>Boards</button>
-                <button className={commonStyles['trello-plugin-button']} onClick={TrelloActions.showCurrentBoard}>Refresh</button>
+                <button className="cux-btn" onClick={TrelloActions.showBoardsList}>Boards</button>
+                <button className="cux-btn" onClick={TrelloActions.showCurrentBoard}>Refresh</button>
             </ViewContainer>
         );
     },

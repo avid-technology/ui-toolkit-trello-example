@@ -39,7 +39,7 @@ const BoardList = createReactClass({
 
         return (
             <ViewContainer page={page}>
-                <button className={commonStyles['trello-plugin-button']} onClick={TrelloActions.signOut}>Sign Out</button>
+                <button className="cux-btn" onClick={TrelloActions.signOut}>Sign Out</button>
             </ViewContainer>
         );
     },

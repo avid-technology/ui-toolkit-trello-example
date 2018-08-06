@@ -12,6 +12,7 @@ import {composeWithDevTools} from 'redux-devtools-extension';
 import rootReducer from './redux/reducers/index';
 import rootSaga from './redux/saga/index';
 import PaneContainer from './containers/MainPaneContainer';
+import 'cloudux-bootstrap/dist/css/cloudux.min.css';
 
 // export const API_URL='http://localhost:8000/api/';
 
