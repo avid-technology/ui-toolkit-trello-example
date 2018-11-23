@@ -4,7 +4,7 @@
 
 import TrelloBrowser from 'trello-browser';
 import EventEmitter from 'events';
-import {TrelloViewMode} from './../enums.js';
+import {TrelloViewMode} from '../enums.js';
 
 const tokenLocalStorageKey = 'mcux-trello-plugin-token';
 const trelloApiKey = '77a93779586328dcb93729d4751d89e9';

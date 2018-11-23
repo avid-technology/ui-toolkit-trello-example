@@ -1,8 +1,7 @@
 /**
  * Copyright 2017 by Avid Technology, Inc.
  */
-
-import ReactDOM from 'react-dom';
+/* eslint-disable */
 
 import ApplicationContainer from '../../app/index';
 
@@ -10,14 +9,10 @@ import ApplicationContainer from '../../app/index';
 export default class ViewWrapper {
     createElement() {
         this.el = document.createElement('div');
-        this.el.style.height = '100%';
-        this.el.style.display = 'flex';
         return Promise.resolve(this.el);
     }
 
-    onInit(config) {
-        this.state = config.state;
-
+    onInit() {
         this.pane = new ApplicationContainer({
             contextCallback: function (context) {
                 this.trigger('contextChange', context);
@@ -26,16 +21,10 @@ export default class ViewWrapper {
     }
 
     onRender() {
-        this.pane.render(this.el);
+        this.el.appendChild(this.pane.returnElement());
     }
 
-    onDestroy() {
-        ReactDOM.unmountComponentAtNode(this.el);
-    }
-
-    getState() {
-        return this.pane.store.getState();
-    }
+    onDestroy(data) {}
 
     onRevalidate(data) {}
 
@@ -45,23 +34,33 @@ export default class ViewWrapper {
 
     enqueueLoading(promise) {}
 
-    name(newName) {return '';}
+    name(newName) {
+        return '';
+    }
 
-    isShown() {return true;}
+    isShown() {
+        return true;
+    }
 
-    isVisible() {return true;}
+    isVisible() {
+        return true;
+    }
 
-    closeAllowed() {return true;}
+    closeAllowed() {
+        return true;
+    }
 
     destroy() {}
 
-    getMinHeight() {return 50;}
+    getMinHeight() {
+        return 50;
+    }
 
-    getMinWidth() {return 50;}
+    getMinWidth() {
+        return 50;
+    }
 
     get publicScope() {
-        return {
-            getState: this.getState.bind(this),
-        };
+        return {};
     }
 }
