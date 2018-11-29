@@ -1,0 +1,18 @@
+{
+  "identity": {
+    "description": "Example Connector using the MediaCentral UI Toolkit to display Trello boards and cards.",
+    "build": "1",
+    "version": "0.0.1"
+  },
+  "signing": {
+    "login": "",
+    "developerID": "",
+    "organization": "",
+    "privateKeyPath": ""
+  },
+  "connection": {
+    "hostIp": "10.42.24.55",
+    "hostPort": "",
+    "proxyPort": "8080"
+  }
+}
