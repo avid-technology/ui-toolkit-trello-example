@@ -20,7 +20,7 @@ class TrelloModel extends EventEmitter {
             mode: TrelloViewMode.SIGN_IN,
         };
 
-        let token = localStorage.getItem(tokenLocalStorageKey);
+        const token = localStorage.getItem(tokenLocalStorageKey);
 
         if (token) {
             this.trello.setToken(token);

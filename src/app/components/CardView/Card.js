@@ -35,7 +35,7 @@ const Card = createReactClass({
     },
 
     render() {
-        let page = (
+        const page = (
             <div className={styles['trello-plugin-card-container']}>
                 <div className={styles['trello-plugin-text-label-bold']}>
                     Edit Card

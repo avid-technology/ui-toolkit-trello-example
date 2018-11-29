@@ -18,7 +18,7 @@ const Attachments = createReactClass({
         return this.props.items.map((item)=>{
             return (
                 <div key={item.id} className={styles['trello-plugin-card-view-attachments-item']}>
-                    <a href={item.url} onClick={(event => event.target.target = '_blank')} className={styles['trello-plugin-attachments-link']}>{item.url}</a>
+                    <a href={item.url} onClick={(event => { event.target.target = '_blank' })} className={styles['trello-plugin-attachments-link']}>{item.url}</a>
                 </div>
             );
         });
@@ -32,7 +32,6 @@ const Attachments = createReactClass({
             </div>
         );
     },
-
 });
 
 export default Attachments;
