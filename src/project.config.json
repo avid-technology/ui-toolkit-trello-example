@@ -11,7 +11,7 @@
     "privateKeyPath": ""
   },
   "connection": {
-    "hostIp": "10.42.24.55",
+    "hostIp": "your-mediacentral-cloudux-machine-address",
     "hostPort": "",
     "proxyPort": "8080"
   }

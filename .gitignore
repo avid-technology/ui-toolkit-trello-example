@@ -1,5 +1,4 @@
 node_modules
-package-lock.json
 .DS_Store
 dist
 build
@@ -9,3 +8,4 @@ yarn.lock
 
 .idea
 coverage/
+.gitattributes
