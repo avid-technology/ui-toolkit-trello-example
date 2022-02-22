@@ -13,6 +13,6 @@
   "connection": {
     "hostIp": "your-mediacentral-cloudux-machine-address",
     "hostPort": "",
-    "proxyPort": "8080"
+    "proxyPort": "443"
   }
 }

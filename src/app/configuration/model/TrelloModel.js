@@ -7,7 +7,7 @@ import EventEmitter from 'events';
 import {TrelloViewMode} from '../enums.js';
 
 const tokenLocalStorageKey = 'mcux-trello-plugin-token';
-const trelloApiKey = '77a93779586328dcb93729d4751d89e9';
+const trelloApiKey = '501fa86a525af5a617d91704f77db99a';
 
 class TrelloModel extends EventEmitter {
 

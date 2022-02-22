@@ -13,7 +13,7 @@ When opening the pane for the first time the user needs to log in. This is done 
 ## Browsing cards
 Once logged in the pane will show all boards of the user. This is a simplified implementation of Trello which allows for browsing, creating cards and editing them. It does not support more advanced Trello functions such as moving cards. 
 
-![Show all boards](screenshots/BrowsingCards.png)
+![Show all boards](screenshots/Boards.png)
 
 In the board view all cards are shown with title and the number of attachments. Clicking on a card will open it to show details and allow editing of the card text.
 

@@ -31,6 +31,10 @@ export default class ApplicationContainer {
         sagaMiddleware.run(rootSaga);
     }
 
+    getTitle() {
+        return 'Trello Example App';
+    }
+
     render(element) {
         ReactDOM.render(
             <Provider store={this.store}>
