@@ -1,6 +1,7 @@
 /**
- * Copyright 2017 by Avid Technology, Inc.
+ * Copyright 2017-2019 by Avid Technology, Inc.
  */
+/* eslint-disable */
 import appConfig from '../../package.json';
 
 const viewName = `${appConfig.identity.appName}-view`;
@@ -29,6 +30,7 @@ export default class EntryApp {
     }
 
     onClose() {
+        console.log('[ExamplePlugin] onClose');
         return Promise.resolve();
     }
 
@@ -50,6 +52,10 @@ export default class EntryApp {
 
     setContext(context) {
         console.log('[ExamplePlugin] context', context);
+    }
+
+    getTitle() {
+        return this.innerView.getTitle();
     }
 
     get publicScope() {

@@ -37,6 +37,10 @@ export default class ViewWrapper {
         return this.pane.store.getState();
     }
 
+    getTitle() {
+        return this.pane && this.pane.getTitle();
+    }
+
     onRevalidate(data) {}
 
     onFocusLost() {}
