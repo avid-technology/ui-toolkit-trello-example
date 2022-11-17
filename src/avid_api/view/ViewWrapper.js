@@ -1,5 +1,5 @@
 /**
- * Copyright 2017 by Avid Technology, Inc.
+ * Copyright 2022 by Avid Technology, Inc.
  */
 
 import ReactDOM from 'react-dom';
@@ -8,25 +8,18 @@ import ApplicationContainer from '../../app/index';
 
 // Need to be bcs it is used in main App :
 export default class ViewWrapper {
-    createElement() {
+    onInit(config, { dispatch }) {
+        this.trigger = dispatch;
+        this.state = config.state;
+    }
+
+    onRender({ domElement }) {
         this.el = document.createElement('div');
         this.el.style.height = '100%';
         this.el.style.display = 'flex';
-        return Promise.resolve(this.el);
-    }
-
-    onInit(config) {
-        this.state = config.state;
-
-        this.pane = new ApplicationContainer({
-            contextCallback: function (context) {
-                this.trigger('contextChange', context);
-            }.bind(this),
-        });
-    }
-
-    onRender() {
+        this.pane = new ApplicationContainer();
         this.pane.render(this.el);
+        domElement.appendChild(this.el);
     }
 
     onDestroy() {
@@ -66,6 +59,7 @@ export default class ViewWrapper {
     get publicScope() {
         return {
             getState: this.getState.bind(this),
+            getTitle: this.getTitle.bind(this),
         };
     }
 }
